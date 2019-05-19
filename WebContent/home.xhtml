@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="/template/ui.xhtml">
+	<!-- Latest compiled and minified CSS -->
+	<ui:define name="bodyContent" background = "download.jpg">
+		<h3>Welcome to ILife</h3>
+		<h:form id="jsfForm">
+		
+		<!--  go one directory back and add css file -->
+		
+		<h:outputStylesheet library="css" name="../css/style.css"  />
+		
+			<h:commandButton value="login" action="login">
+			
+			</h:commandButton>
+			<h:commandButton value="signup" action="SignUp">
+			</h:commandButton>
+		</h:form>
+	</ui:define>
+</ui:composition>

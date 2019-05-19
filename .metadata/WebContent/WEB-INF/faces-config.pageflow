@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14614831253500" configfile="/ILife/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Login.xhtml" x="122" y="562" id="pf14615279940200" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14615281465567 pf14616078758490 pf14620796946490 pf14620829439384" path="Login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="event.xhtml" id="pf146152814655610" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14615281465567" path="event.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="congratulation.xhtml" id="pf14616078758501" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14616078758490" path="congratulation.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" id="pf14620796946491" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14620796946490" path="login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="eventPost.xhtml" id="pf14620829439395" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14620829439384" path="eventPost.xhtml"/>
+  <links id="pf14615281465567" target="pf146152814655610" source="pf14615279940200" outcome="event" fromaction="#{loginController.checkLogin()}"/>
+  <links id="pf14616078758490" target="pf14616078758501" source="pf14615279940200" outcome="congratulation" fromaction="#{signupController.add()}"/>
+  <links id="pf14620796946490" target="pf14620796946491" source="pf14615279940200" outcome="login" fromaction="#{loginController.checkLogin()}"/>
+  <links id="pf14620829439384" target="pf14620829439395" source="pf14615279940200" outcome="eventPost" fromaction="#{loginController.checkLogin()}"/>
+</pageflow:Pageflow>

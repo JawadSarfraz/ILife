@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+	<title>ILife</title>
+	<meta http-equiv="content-type"
+		content="application/xhtml+xml; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</h:head>
+
+<h:body>
+	<div id="content">
+
+		<div id="header">
+			<div id="title">
+				<h1>ILife</h1>
+			</div>
+			<img src="images/bg/header_left.jpg" style="width: 77%;" />
+		</div>
+
+		<div id="mainMenu">
+			<ul class="floatLeft">
+				<li><a href="" class="here">home</a></li>
+				<li><a href="">about us</a></li>
+				<li><a href="">news</a></li>
+				<li><a href="">contact</a></li>
+				<li><a href="" class="last">links</a></li>
+			</ul>
+			<ul class="floatRight">
+				<li><a href="login.xhtml" class="">Login</a></li>
+				<li><a href="SignUp.xhtml">Signup</a></li>
+			</ul>
+		</div>
+
+		<div id="page">
+
+			<div class="width25 floatRight leftColumn">
+
+				<ul class="sideMenu">
+
+					<li class="">Menu
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">News</a></li>
+							<li><a href="">Contact</a></li>
+							<li><a href="">Links</a></li>
+
+						</ul>
+					</li>
+				</ul>
+
+				<h2>News</h2>
+				<p>It is a long established fact that a reader will be
+					distracted by the readable content of a page when looking at its
+					layout. The point of using Lorem Ipsum is that it has a
+					more-or-less normal distribution of letters, as opposed to using
+					'Content here, content here', making it look like readable English.
+				</p>
+
+				<p align="right">
+					<a href="">Read more...</a>
+				</p>
+
+			</div>
+
+			<div class="width75 floatLeft">
+				<div class="gradient">
+
+					<div style="width: 90%; margin: auto;">
+						<h:form>
+							<h5>Email :</h5>
+							<p:inputText value="#{loginBean.email}">
+							</p:inputText>
+							<h5>Password :</h5>
+							<p:inputText value="#{loginBean.password}">
+
+							</p:inputText>
+							<br/>
+							<br/>
+							<h:commandButton value="Login" styleClass="greenButton"
+								action="#{loginController.checkLogin()}">
+							</h:commandButton>
+							<h:commandButton value="Signup" action="SignUp.xhtml" styleClass="blueButton">
+							</h:commandButton>
+						</h:form>
+					</div>
+				</div>
+
+				<div class="gradient">
+
+					<h1>Lorem Ipsum</h1>
+					<h2>What is Lorem Ipsum?</h2>
+
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s, when an unknown printer took a
+						galley of type and scrambled it to make a type specimen book. It
+						has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was
+						popularised in the 1960s with the release of Letraset sheets
+						containing Lorem Ipsum passages, and more recently with desktop
+						publishing software like Aldus PageMaker including versions of
+						Lorem Ipsum.</p>
+
+					<h2>Why do we use it?</h2>
+					<p>It is a long established fact that a reader will be
+						distracted by the readable content of a page when looking at its
+						layout. The point of using Lorem Ipsum is that it has a
+						more-or-less normal distribution of letters, as opposed to using
+						'Content here, content here', making it look like readable
+						English. Many desktop publishing packages and web page editors now
+						use Lorem Ipsum as their default model text, and a search for
+						'lorem ipsum' will uncover many web sites still in their infancy.
+						Various versions have evolved over the years, sometimes by
+						accident, sometimes on purpose (injected humour and the like).</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<div id="footer">
+
+		<div id="width">
+			<span class="floatLeft"> Copyright © 2006 </span> <span
+				class="floatRight"> <a href="">home</a> <span class="grey">|</span>
+				<a href="">about us</a> <span class="grey">|</span> <a href="">news</a>
+				<span class="grey">|</span> <a href="">contact</a> <span
+				class="grey">|</span> <a href="">links</a>
+			</span>
+		</div>
+
+	</div>
+
+	<!-- Designed by DreamTemplate. Please leave link unmodified. -->
+	<br /><center>
+			<a href="http://www.dreamtemplate.com" title="Website Templates"
+				target="_blank">Website templates</a>
+		</center>
+</h:body>
+
+</html>
